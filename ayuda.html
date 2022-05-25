@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/img/logoTabs2.png">
+    <title>Ayuda</title>
+</head>
+<body>
+    <div class="ayuda">   
+        <header>
+            <nav>
+                <div class="logo">Tab's <img src="assets/img/logoTabs2.png" alt="Tab's"></div>
+                <input type="checkbox" id="click">
+                <label for="click" class="menu-btn">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="sobre.html">Sobre Tab's</a></li>
+                    <li><a href="ayuda.html" class="active">Ayuda</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="contacto">
+                <video autoplay muted loop>
+                    <source src="assets/video/background1.mp4" type="video/mp4">
+                </video>
+                <div class="content">
+                    <form action="#">
+                        <h1></h1>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" placeholder="Tu nombre">
+    
+                        <label for="email">Email:</label>
+                        <input type="text" id="email" placeholder="Tu email">
+                        
+                        <label for="mensaje">Consulta:</label>
+                        <textarea id="mensaje" placeholder="Tu consulta..." rows="6"></textarea>
+    
+                        <div class="btn">
+                            <input type="submit" value="Enviar Mensaje">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <h3>Todos los derechos reservados por copyright</h3>
+            <div class="redes">
+                <a href="https://www.instagram.com/blocktab/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="mailto:thiagoblock445@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
