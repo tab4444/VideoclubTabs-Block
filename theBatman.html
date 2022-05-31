@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/img/logoTabs2.png">
+    <title>The Batman (2022) | Tab's</title>
+</head>
+<body>
+    <div class="theBatman">
+        <header>
+            <nav>
+                <div class="logo">Tab's <img src="assets/img/logoTabs2.png" alt="Tab's"></div>
+                <input type="checkbox" id="click">
+                <label for="click" class="menu-btn">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="sobre.html">Sobre Tab's</a></li>
+                    <li><a href="ayuda.html">Ayuda</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="pelicula">
+                <div class="rating">
+                    <h2><i class="fa-solid fa-star"></i> 9.8</h2>
+                    <h4>/10</h4>
+                </div>
+                <div class="content">
+                    <div class="infoGeneral">
+                        <h1>The Batman</h1>
+                        <h3>Dirigida por <strong>Matthew George "Matt" Reeves</strong></h3>
+                        <h3>2022</h3>
+                        <div class="infoAdicional">
+                            <h4>Crimen, Acción, Drama</h4>
+                            <h4><i class="fa-solid fa-clock"></i> 2h 56min</h4>
+                            <h4>PG-13</h4>
+                        </div>
+                    </div>
+                    <div class="sinopsis">
+                        <h2>Sinopsis</h2>
+                        <p>Cuando un sádico asesino en serie comienza a asesinar a las principales figuras políticas de Gotham, Batman se ve obligado a investigar la corrupción oculta de la ciudad y a cuestionar la participación de su familia.</p>
+                    </div>
+                    <div class="trailer">
+                            <a href="#showTrailer" id="btn">
+                                <h3 class="botonTrailer">Trailer</h3>
+                                <i class="fa-solid fa-play"></i>
+                            </a>
+                    </div>
+                    <div id="showTrailer" class="showTrailer">
+                        <div class="content">
+                            <div class="info">
+                                <div class="content">
+                                    <h6>Trailer</h6>
+                                    <h3>The Batman</h3>
+                                    <h4>Matt Reeves, 2022</h4>
+                                </div>
+                                <a href="theBatman.html" class="cerrar"><i class="fa-solid fa-xmark"></i></a>
+                            </div>
+                            <video controls>
+                                <source src="assets/video/TheBatmanTrailer.mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+                <div class="flecha">
+                    <a href="#elenco"><i class="fa-solid fa-chevron-down"></i></a>
+                </div>
+            </div>
+        </main>
+
+        <section>
+            <div class="infoPelicula">
+                <h2>Elenco principal</h2>
+                <div class="elenco" id="elenco">
+                    <div class="actor actor1"></div>
+                    <div class="actor actor2"></div>
+                    <div class="actor actor3"></div>
+                    <div class="actor actor4"></div>
+                    <div class="actor actor5"></div>
+                    <div class="actor actor6"></div>
+                    <div class="actor actor7"></div>
+                    <div class="actor actor8"></div>
+                </div>
+                <div class="actor-Personaje">
+                    <div class="nombre">
+                        <h5>Robert Pattinson</h5>
+                        <h6>Bruce Wayne, Batman</h6>
+                    </div>
+                    <div class="nombre">
+                        <h5>Zoë Kravitz</h5>
+                        <h6>Selina Kyle</h6>
+                    </div>
+                    <div class="nombre">
+                        <h5>Jeffrey Wright</h5>
+                        <h6>James Gordon</h6>
+                    </div>
+                    <div class="nombre">
+                        <h5>Colin Farrell</h5>
+                        <h6>Oz, El Pingüino</h6>
+                    </div>
+                    <div class="nombre">
+                        <h5>Paul Dano</h5>
+                        <h6>Enigma</h6>
+                    </div>
+                    <div class="nombre">
+                        <h5>John Turturro</h5>
+                        <h6>Carmine Falcone</h6>
+                    </div>
+                    <div class="nombre">
+                        <h5>Andy Serkis</h5>
+                        <h6>Alfred</h6>
+                    </div>
+                    <div class="nombre">
+                        <h5>Peter Sarsgaard</h5>
+                        <h6>Gil Colson</h6>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <h3>Todos los derechos reservados por copyright</h3>
+            <div class="redes">
+                <a href="https://www.instagram.com/blocktab/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="mailto:thiagoblock445@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

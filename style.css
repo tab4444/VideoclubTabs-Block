@@ -218,6 +218,8 @@ main{
     height: 540px;
     text-align: left;
     padding-left: 2.5%;
+    display: flex;
+    flex-direction: column;
 }
 .dailyMovie h3{
     margin-top: 24%;
@@ -235,6 +237,23 @@ main{
     font-weight: 350;
     padding-top: 1%;
 }
+.dailyMovie a{
+    display: flex;
+    position: absolute;
+    text-decoration: none;
+    color: #ffffff85;
+    justify-content: center;
+    align-items: center;
+    margin-top: 13.5%;
+    margin-left: 28.5%;
+}
+.dailyMovie a i{
+    font-size: 60px;
+    font-weight: 500;
+}
+.dailyMovie a i:hover{
+    color: #fff;
+}
 .specialMovies{
     display: flex;
     flex-direction: column;
@@ -244,7 +263,7 @@ main{
     margin-bottom: 2%;
 }
 .descripcionEspecial{
-    color: rgb(119, 119, 119);
+    color: #777777;
     font-weight: 500;
     width: 600px;
     text-align: center;
@@ -304,14 +323,7 @@ main{
 section{
     grid-area: section;
 }
-footer{
-    grid-area: footer;
-    background-color: #000;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+
 /* Styles de "ayuda.html" */
 .contacto{
     display: flex;
@@ -384,6 +396,269 @@ footer{
     font-size: 17px;
     cursor: pointer;
     border-radius: 3px;
+}
+
+/* Styles de theBatman.html */
+.pelicula{
+    display: flex;
+    flex-direction: column;
+    background-image: url(assets/img/theBatman.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 920px;
+    color: #fff;
+}
+.rating{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    margin-right: 11.5%;
+    padding-top: 3%;
+}
+.rating h2{
+    font-weight: 600;
+    font-size: 22px;
+}
+.rating h2 i{
+    font-size: 15px;
+}
+.pelicula .content{
+    display: flex;
+    flex-direction: row;
+    padding-top: 28.5%;
+    align-items: center;
+    justify-content: center;
+}
+.pelicula h4{
+    font-weight: 500;
+    color:rgb(178, 178, 178);
+}
+.infoGeneral{
+    display: flex;
+    flex-direction: column;
+    padding-right: 10%;
+}
+.infoGeneral h1{
+    text-transform: uppercase;
+    font-weight: 550;
+}
+.infoGeneral h3{
+    font-weight: 350;
+    font-size: 15px;
+    padding-top: 0.5%;
+}
+.infoAdicional{
+    margin-top: 5%;
+}
+.infoGeneral h4{
+    font-size: 15px;
+    padding-top: 1.25%;
+}
+.sinopsis{
+    padding-right: 15%;
+}
+.sinopsis h2{
+    font-weight: 550;
+    text-transform: uppercase;
+}
+.sinopsis p{
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 350;
+    max-width: 600px;
+}
+.trailer{
+    display: flex;
+    flex-direction: column;
+}
+.trailer a{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    border: 1px solid #fff;
+    max-height: 40px;
+    border-radius: 20px;
+    align-items: center;
+    margin-bottom: 4%;
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+}
+.trailer a:hover{
+    box-shadow: 2px solid #ffffff84;
+    border-radius: 15px;
+    background-color: #ffffff6d;
+}
+.botonTrailer{
+    text-transform: uppercase;
+    font-weight: 400;
+    padding-left: 15px;
+    color: #fff;
+}
+.trailer a i{
+    padding-right: 15px;
+    color: #fff;
+}
+.showTrailer{
+    position: fixed;
+    height: 1920px;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.7);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+}
+.showTrailer .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.25);
+    width: 90%;
+    height: 1320px;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.5s 0.2s;
+}
+.showTrailer .content .cerrar, .showTrailer .content .cerrar:link, .showTrailer .content .cerrar:visited{
+    color: #fff;
+    text-decoration: none;
+    position: absolute;
+    top: 400px;
+    right: 10px;
+    font-size: 30px;
+    display: inline-block;
+    line-height: 1;
+    transition:  all 0.2s;
+}
+.showTrailer .content .cerrar:hover{
+    color: #b70000;
+}
+.showTrailer:target{
+    opacity: 1;
+    visibility: visible;
+}
+.showTrailer:target .content{
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+.showTrailer .content video{
+    height: 720px;
+}
+.showTrailer .content .info{
+    display: flex;
+    flex-direction: row;
+}
+.showTrailer .content .info .content{
+    padding-top: 36%;
+    text-transform: uppercase;
+}
+.flecha{
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flecha a i{
+    font-size: 35px;
+    color: #ffffffae;
+}
+.infoPelicula{
+    display: flex;
+    flex-direction: column;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+.infoPelicula h2{
+    text-transform: uppercase;
+    font-weight: 550;
+    font-size: 20px;
+    color: #565656;
+    margin-left: 10.1%;
+    margin-bottom: 0.75%;
+}
+.elenco{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.actor-Personaje{
+    display: flex;
+    flex-direction: row;
+    margin-left: 10.1%;
+}
+.nombre{
+    min-width: 180px;
+    margin-right: 0.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.nombre h5{
+    text-transform: uppercase;
+    font-weight: 550;
+    font-size: 15px;
+    color: rgb(100, 100, 100);
+}
+.nombre h6{
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 12px;
+    color: rgb(119, 119, 119);
+}
+.actor{
+    min-width: 180px;
+    min-height: 210px;
+    margin-right: 0.5%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    filter:grayscale(100%);
+}
+.actor1{
+    background-image: url(assets/img/elenco/RobertPattinson.jpg);
+}
+.actor2{
+    background-image: url(assets/img/elenco/zoeKravitz.jpg);
+}
+.actor3{
+    background-image: url(assets/img/elenco/jeffreyWright.jpg);
+}
+.actor4{
+    background-image: url(assets/img/elenco/colinFarrell.jpg);
+}
+.actor5{
+    background-image: url(assets/img/elenco/paulDano.jpg);
+}
+.actor6{
+    background-image: url(assets/img/elenco/johnTurturro.jpg);
+}
+.actor7{
+    background-image: url(assets/img/elenco/andySerkis.jpg);
+}
+.actor8{
+    background-image: url(assets/img/elenco/peterSarsgaard.jpg);
+}
+footer{
+    grid-area: footer;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
 }
 footer h3{
     color: #fff;
